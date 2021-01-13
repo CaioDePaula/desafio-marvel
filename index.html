@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/iron-man-colors.png" type="image/x-icon">
+    <title>Marvel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.min.css" integrity="sha256-tAWwIHZQVW7bPMX/bPT1iRUGL96jlJ0QiX0YqyGhfe4=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap 4/compiler/style.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="buttons-menu" id="home-page">
+        <a href="index.html">
+            <img src="img/marvel-logo.png" alt="" class="img-home-page">
+        </a>
+        
+        <a href="#" class="btn btn-link text-light buttons-menu" id="btn-hero-versus-hero">Hero Vs Hero</a>
+        <a href="#" class="btn btn-link text-light buttons-menu" id="btn-quiz" data-toggle="modal" data-target="#quiz">Quiz</a>
+        
+        <input type="text" placeholder="Search your favorite hero" id="input-search">
+        <a href="#" class="btn">
+            <i class="fas fa-search text-light" id="lupa-search"></i>
+        </a>
+    </div>
+
+    <!-- Content data of Marvel -->
+
+    <div class="container mt-3">
+        <section class="row" id="characters-data">
+          <!-- Datas -->
+          <div class="col-md-6 col-sm-12 col-lg-6 col-12 mb-3" id="add-new-character">
+            <div class="btn-add-character-versus">
+              <a href="#input-search" style="font-size: 50px;">
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <div id="bm">
+        <div class="container text-danger">
+            <!--<h1 class="display-1">Thanos passed on here!</h1>-->
+        </div>
+    </div>
+
+    <nav class="Page navigation mt-5" id="pagination">
+        <!-- Pagination-->
+    </nav>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-labelledby="modalQuiz" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalQuiz">Who is Character?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="position:relative">
+              <img src="" alt="" id="image-quiz">
+              <div style="position: absolute; top:0; height:100%; width:100%;"></div>
+            </div>
+            <div class="modal-footer">
+                <input type="text" placeholder="Write name Character" id="input-quiz">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="bootstrap 4/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/spin.min.js" integrity="sha256-oNtUmAZAsXy3Pg53xwfYE1YYgfdktOImDPd57g6Ldek=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.min.js" integrity="sha256-xqr6dAl11yzo9ssVFuVopsFNB/WWyFPb9sNOolhq43Q=" crossorigin="anonymous"></script>
+    <script src="fontawesome-free/js/fontawesome.js"></script>
+    <script src="script/animation/bodymovin.js"></script>
+    <script src="script/animation/animation.js"></script>
+    <script src="script/config-requisition.js"></script>
+    <script src="script/makers/make-characters.js"></script>
+    <script src="script/plugins/pagination-plugin.js"></script>
+    <script src="script/pagination/pagination.js"></script>
+    <script src="script/search/search-about.js"></script>
+    <script src="script/makers/make-character.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="script/slide/slide.js"></script>
+    <script src="script/table/table-series-stories.js"></script>
+    <script src="script/quiz/quiz.js"></script>
+    <script src="script/versus/hero-versus-hero.js"></script>
+</body>
+</html>

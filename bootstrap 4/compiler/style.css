@@ -1,0 +1,152 @@
+html, body {
+background-image: url("../../img/comics-popart-blank-layout/3958.jpg");
+width: 100%;
+height: auto;
+background-size: cover;
+background-position: top center;
+box-shadow: 0 0 88888888888888px rgba(0, 0, 0, 0.8) inset;
+overflow: auto;
+}
+
+    /* home page */
+#home-page {
+    background-color: #ED1D24;
+}
+.img-home-page {
+    width: 15%; 
+    height: 15%;
+}
+#input-search {
+    margin: 20px;
+    width: 50%;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #eee;
+    background-color: transparent;
+    color: #fff;
+}
+#input-search:focus {
+    border-bottom: 2px solid #fff;
+}
+#input-search::placeholder {
+    color: #eee;
+}
+.buttons-menu {
+    font-weight: bold;
+}
+.buttons-menu a {
+    text-decoration: none;
+}
+#lupa-search {
+    display: none;
+}
+
+@media( max-width: 387px) {
+    #input-search {
+        display: none;
+    }
+    #lupa-search {
+        display: block;
+    }
+}
+
+    /* Conteiner Characters */
+.font-text-default {
+    font-family: 'Coming Soon', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+.contentPersonalized {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    height: 280px;
+    cursor: pointer;
+}
+.image-character {
+    width: 100%;
+    height: 100%;
+}
+.div-content-character-data {
+    height: 280px;
+    max-height: 280px;
+    position: relative;
+}
+.div-content-character-data .font-text-default {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px black;
+    opacity: 0;
+}
+.div-content-character-data:hover .font-text-default {
+    opacity: 1;
+}
+.div-content-character-data:hover .image-character{
+    filter: blur(8px) grayscale(50%);
+}
+
+    /* Animations Lottie */
+#bm {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    }
+.loading-page-deadpool {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+    /* Character Especific */
+.img-character {
+    width: 280px;
+    height: 280px;
+    box-shadow: 5px 5px #000;
+}
+.nameCharacter-font {
+    font-family: 'Coming Soon', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+.image-comic {
+    width: auto;
+    max-height: 500px;
+}
+.scroll {
+    overflow: auto;
+    height: 500px;
+}
+.btn-add-character-versus{
+    background-color: #fff;
+    border-radius:6px;
+    width: 150px; 
+    display:flex; 
+    justify-content: center;
+    height: auto;
+    vertical-align: middle;
+    position:absolute;
+    top:30%
+}
+#add-new-character {
+    display: none;
+    position:relative;
+}
+    /* Quiz */
+.image-quiz {
+    max-width: 407px;
+    max-height: 407px;
+    filter: blur(10px)
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
