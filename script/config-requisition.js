@@ -1,6 +1,6 @@
 const credentials = {
-    apiKeyPublic: "46113929393e0a1df1a6c13b2960e826",
-    apiKeyPrivate: "a766882da5881030a812869babd4c69f6e4d9116",
+    apiKeyPublic: "",
+    apiKeyPrivate: "",
     url: "http://gateway.marvel.com/v1/public/characters"
 }
 
