@@ -57,5 +57,5 @@ function generationOffsetRandomic() {
     return Math.floor(Math.random() * 1400);
 }
 function existsImageCharacter(characters) {
-    return (characters.thumbnail.path == 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available');
+    return (characters.thumbnail.path == 'https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available');
 }
